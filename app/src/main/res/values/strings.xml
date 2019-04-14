@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">indicahot</string>
+    <string name="hint_senha" />
+    <string name="hint_login" />
+    <string name="btn_login">Entrar</string>
+    <string name="btn_cadastrar">Cadastrar</string>
+    <string name="btn_sair">sair</string>
+    <string name="btn_cadastro">cadastrar</string>
+    <string name="btn_uso">Termo de uso!</string>
+    <string name="checkbox_cad">Concordo com o</string>
+    <string name="hint_cad_mail">exemplo@exemplo.com</string>
+    <string name="hint_cad_cpf">000.000.000-00</string>
+    <string name="hint_cad_nasc">00/00/0000</string>
+    <string name="hint_cad_name">Digite o nome</string>
+    <string name="btn_voltar_ofer">Voltar</string>
+    <string name="btn_ofer">Ofertas</string>
+    <string name="btn_gps">GPS</string>
 </resources>
