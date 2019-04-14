@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cadastrar">
+
+    <ImageView
+        android:id="@+id/cd_logo"
+        android:layout_width="99dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/indicahot_logo" />
+
+    <TextView
+        android:id="@+id/view_cada"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="67dp"
+        android:text="Cadastrar Usuário"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cd_logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_nome_cad"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="141dp"
+        android:text="Nome Completo"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_cada" />
+
+    <EditText
+        android:id="@+id/text_nome_cad"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/hint_cad_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_nome_cad" />
+
+    <TextView
+        android:id="@+id/view_date_cad"
+        android:layout_width="141dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Nascimento"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view_cpf_cad"
+        app:layout_constraintTop_toBottomOf="@+id/text_nome_cad" />
+
+    <EditText
+        android:id="@+id/text_date_cad"
+        android:layout_width="111dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:hint="@string/hint_cad_nasc"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_date_cad" />
+
+    <TextView
+        android:id="@+id/view_cpf_cad"
+        android:layout_width="81dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="80dp"
+        android:text="CPF"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/view_date_cad"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_nome_cad" />
+
+    <EditText
+        android:id="@+id/text_cpf_cad"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="@string/hint_cad_cpf"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/text_date_cad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_cpf_cad" />
+
+    <TextView
+        android:id="@+id/view_mail_cad"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="276dp"
+        android:text="Email"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_cpf_cad" />
+
+    <EditText
+        android:id="@+id/text_mail_cad"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/hint_cad_mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_mail_cad" />
+
+    <Button
+        android:id="@+id/btn_cad"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="@string/btn_cadastro"
+        app:layout_constraintEnd_toStartOf="@+id/btn_sair"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_agree_cad" />
+
+    <CheckBox
+        android:id="@+id/checkBox_agree_cad"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/checkbox_cad"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_uso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_mail_cad" />
+
+    <Button
+        android:id="@+id/btn_uso"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="127dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="93dp"
+        android:text="@string/btn_uso"
+        android:textColor="@android:color/holo_blue_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_agree_cad"
+        app:layout_constraintTop_toBottomOf="@+id/text_mail_cad" />
+
+    <Button
+        android:id="@+id/btn_sair"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="117dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="@string/btn_sair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_cad"
+        app:layout_constraintTop_toBottomOf="@+id/btn_uso" />
+</android.support.constraint.ConstraintLayout>
