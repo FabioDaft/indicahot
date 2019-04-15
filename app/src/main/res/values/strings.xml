@@ -15,4 +15,6 @@
     <string name="btn_voltar_ofer">Voltar</string>
     <string name="btn_ofer">Ofertas</string>
     <string name="btn_gps">GPS</string>
+    <string name="view_oferta">Ofertas</string>
+    <string name="view_opiniao">Recomendações</string>
 </resources>
